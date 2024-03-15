@@ -1,0 +1,77 @@
+.config {
+    background-image: linear-gradient(43deg,#000,#203c4b 50%,#313430);
+    height: 100%;
+}
+
+.config-pg{
+    display: flex;
+    justify-content: center;
+}
+
+.bt-Update {
+    margin: 10px 0px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.bt-Up{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.info-cg{
+    flex-direction: column;
+}
+
+.form-config {
+    margin-top: 0;
+    margin: 32px 18px;
+    text-align: center;
+    background-color: #ffffff17;
+    color: white;
+    width: 670px;
+}
+
+.config-client{
+    color: rgba(153, 153, 153, 0.801);
+}
+
+.config-container {
+    padding-left: 24px;
+    padding-right: 24px;
+    border: 2px solid rgba(255, 255, 255, 0.068);
+    display: flex;
+    margin-bottom: 2px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.config-container:hover {
+    background-color: rgba(233, 232, 232, 0.02);
+    cursor: pointer;
+}
+
+.hydrated-config {
+    color:#203c4b;
+}
+
+#name{
+    margin-right: -62px;
+}
+
+#phone{
+    margin-right: -167px;
+}
+
+#email{
+    margin-right: -4px;
+}
+
+#username{
+    margin-right: -88px;
+}
+#password{
+    margin-right: -205px;
+}

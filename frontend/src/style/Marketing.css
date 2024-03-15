@@ -1,0 +1,229 @@
+.marketing-title {
+    margin: 15px;
+    position: relative;
+    z-index: 3;
+}
+
+.container-mkt {
+    background-color: #FFCC70;
+    margin: 20px;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 23px;
+    box-shadow:
+  -0.6px -0.7px 8.4px rgba(0, 0, 0, 0.044),
+  -1px -1.1px 20.3px rgba(0, 0, 0, 0.073),
+  -0.8px -0.8px 38.2px rgba(0, 0, 0, 0.099),
+  0.7px 0.7px 68.1px rgba(0, 0, 0, 0.128),
+  6px 6.2px 127.4px rgba(0, 0, 0, 0.164),
+  44px 46px 305px rgba(0, 0, 0, 0.24)
+;
+}
+
+.zoom-mkt:hover {
+    box-shadow: 0 0 10px 2px rgb(0, 0, 255);
+    width: 300px;
+}
+
+.container-mkt p {
+    color: #4158D0;
+}
+
+.list-mkt {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    flex-wrap: wrap;
+}
+
+.blue-mkt {
+    margin-top: -190px;
+    background: linear-gradient(43deg,#00000073,#203c4b70 50%,#3134306b);
+    /* box-shadow: 20px 19px 20px 15px rgba(197, 197, 197, 0.062); */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 239px 69px;
+} 
+
+.p-mkt {
+    font-size: 18px;
+    text-align:end;
+    padding-left: 80px;
+    margin-top: 200px;
+}
+
+.about-mkt {
+    display: flex;
+    align-items: center;
+}
+
+.marketing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-mkt {
+    margin: 50px 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.about {
+    font-size: 35px;
+}
+
+.value-mkt {
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.text-mkt {
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.about-bbg {
+    text-align: left;
+    margin-bottom: 80px;
+}
+
+.value-bbg {
+    text-align: right;
+}
+
+.about-nb {
+    display: flex;
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.about-img {
+    padding-right: 250px;
+}
+
+.about-value {
+    padding-left: 250px;
+    padding-right: 100px;
+    letter-spacing: 5px;
+}
+
+@media (max-width: 1180px) {
+    .people {
+        display: none;
+    }
+    .marketing-title {
+        font-weight: 100;
+        font-size: 18px;
+    }
+    .container-mkt {
+        margin: 10px;
+        width: 160px;
+        height: 160px;
+        border-radius: 30px;
+        font-size: 15px;
+    }
+    .zoom-mkt:hover {
+        width: 160px;
+    }
+
+    .p-mkt {
+        font-size: 18px;
+        text-align:center;
+        font-weight: 100;
+        letter-spacing: 0px;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-top: 200px;
+        line-height: 21px;
+    }
+    .button-mkt {
+        margin: 30px 10px;
+    }
+    .about {
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+    .about-nb {
+        padding: 0px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-value {
+        padding-left: 50px;
+        padding-right: 50px;
+        letter-spacing: 0px;
+        text-align: center;
+        margin-top: -20px;
+    }
+    .value-bbg {
+        text-align: center;
+    }
+    .about-bbg {
+        text-align: center;
+        margin-bottom: 0px;
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .value-bbg ul li {
+        margin-bottom: 2px;
+        font-size: 18px;
+    }
+    .about-img {
+        padding-right: 0px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 75px;
+    }
+    .about-img img {
+        width: 250px;
+        padding-bottom: 25px;
+    }
+    .value-mkt {
+        font-size: 25px;
+    }
+    .text-mkt {
+        font-size: 16px;
+        font-weight: 100;
+    }
+    .blue-mkt {
+        border-radius:0px;
+    }
+    #img-bform {
+        display: none;
+    }
+    .next-feed {
+        display: none;
+    }
+    .phone-feed {
+        display: flex;
+        font-size: 13px;
+        color: white;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 780px) {
+        .mkt-icon {
+        width: 40px;
+    }
+}

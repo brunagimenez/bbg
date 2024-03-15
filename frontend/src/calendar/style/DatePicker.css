@@ -1,0 +1,130 @@
+.next-btn {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.068);
+    color: #a8a8a8;
+    font-weight: 100;
+}
+
+.btn-dir{
+    box-shadow: -20px -19px 17.9px rgba(0, 0, 0, 0.042)
+}
+.next-btn:hover {
+    background-color: rgba(44, 44, 44, 0.068);
+    box-shadow: none;
+}
+
+.month-name {
+    color:rgb(88, 88, 88);
+    font-weight: 100;
+    padding-top: 15px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.sevenColGrid{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 0px 15px 0px 15px;
+    justify-items: center;
+}
+
+.sevenColGrid p {
+    padding: 0px 5px 0px 5px;
+}
+
+.calendar-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.active {
+    display: flex;
+    border-radius: 100%;
+    background-color: green;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+}
+
+.not-selectable {
+    background-color: rgba(255, 0, 0, 0.185);
+    display: flex;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.288);
+}
+
+#day {
+    width: 20px;
+    height: 29px;
+    cursor: pointer;
+}
+
+.calendar-complete {
+    display: flex;
+    align-items: center;
+}
+
+.hours {
+    margin-left: 40px;
+}
+
+.not-active {
+    box-shadow: -3px -2px 7px 0px rgb(0 0 0 / 37%);
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.active-hour{
+    box-shadow: -3px -2px 7px 0px rgb(0 0 0 / 37%);
+    background-color: #0f920f;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+}
+
+.setHours p:hover {
+    background-color: #0f920f;
+}
+
+.btn-meet {
+    margin-top: 40px;
+}
+
+@media (max-width: 630px) {
+    .picker-wrapper {
+        display: flex;
+        border-radius: 30px;
+        box-shadow: 5px 8px 15px 0px rgb(150, 148, 148);
+    }
+    .calendar-complete {
+        flex-direction: column;
+    }
+    .next-btn {
+        padding: 2px;
+    }
+    .hours {
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .calendar-main {
+      margin-top: -34px;
+    }
+}
+
+@media (max-width: 280px) {
+    .sevenColGrid {
+        padding: 0px;
+    }
+}

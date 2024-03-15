@@ -1,0 +1,10 @@
+.feedback-container, .list-scroll, .about-mkt, .scroll, .scroll-mkt, .scroll-ceo, .section-service {
+    opacity: 0; /* Inicialmente, a imagem não é visível */
+    transform: translateY(20px); /* Adiciona um deslocamento inicial para cima */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Adiciona uma transição suave */
+}
+  
+.visible {
+    opacity: 1; /* Quando a classe 'visible' é aplicada, a imagem torna-se visível */
+    transform: translateY(0); /* Remove o deslocamento para cima */
+}

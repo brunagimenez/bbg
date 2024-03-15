@@ -1,0 +1,39 @@
+headers {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffcc70de;
+    align-items: center;
+    margin-top: 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    box-shadow: 20px 19px 20px 15px rgba(197, 197, 197, 0.062);
+}
+
+.login-icon {
+    width: 50px;
+    cursor: pointer;
+}
+
+.home-icon {
+    cursor: pointer;
+    padding-left: 30%;
+}
+
+.name {
+    padding: 15px;
+    background-color: #4158D0;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    headers {
+        justify-content: space-between;
+        padding: 30px 30px 30px;
+    }
+
+    .home-icon {
+        width: 90px;
+        padding-left: 0%;
+    }
+}

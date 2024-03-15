@@ -1,0 +1,86 @@
+.title-time {
+    margin-top: -95px;
+    width: 900px;
+    text-align: center;
+}
+
+.button-time {
+    margin-top: 65px;
+}
+
+.flip-container {
+    display: flex;
+    width: 350px;
+    height: 300px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+}
+
+.flip-container:hover {
+    transform: perspective(1000px) rotateY(180deg);
+    background-color: #435bd0;
+}
+
+.flip-container .initial-text {
+    position: relative;
+    top: 55%;
+    transform: rotateY(0deg);
+}
+
+.flip-container .hover-text {
+    transform: rotateY(180deg);
+    opacity: 0;
+    position: relative;
+    top: -20%;
+    padding: 25px;
+}
+
+.flip-container:hover .initial-text {
+    opacity: 0;
+}
+
+.flip-container:hover .hover-text {
+    opacity: 1;
+    color: white;
+}
+
+@media (max-width: 900px) {
+    .title-time {
+        font-weight: 100;
+        font-size: 18px;
+        letter-spacing: 0px;
+        width: 300px;
+    }
+    .title-time h3{
+        letter-spacing: 0px;
+        font-weight: 100;
+        font-size: 16px;
+    }
+    .flip-container {
+        width: 300px;
+        height: 200px;
+    }
+    .flip-container .initial-text {
+        top: 60%;
+        font-size: 18px;
+    }
+    
+    .flip-container .hover-text {
+        top: -25%;
+        font-size: 17px;
+    }
+
+    .button-time {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 280px) {
+    .flip-container {
+        width:255px;
+    }
+    .title-time {
+        width:255px;
+    }
+}

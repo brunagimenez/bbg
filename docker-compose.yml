@@ -1,0 +1,27 @@
+version: '3'
+services:
+  frontend:
+    build: ./frontend
+    container_name: frontend
+    volumes:
+      - ./frontend:/app/build
+    ports:
+      - 3000:3000
+    stdin_open: true
+    tty: true
+    command: sh
+    restart: on-failure
+    depends_on:
+      - backend
+
+  backend:
+    build: ./backend
+    container_name: backend
+    volumes:
+      - ./backend:/app
+    ports:
+      - 3001:3001
+    stdin_open: true
+    tty: true
+    command: sh
+    restart: on-failure

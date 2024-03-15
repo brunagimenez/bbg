@@ -1,0 +1,38 @@
+.not-access-p {
+    text-align: center;
+    width: 514px;
+    background-color: #ffffff0f;
+    padding: 63px;
+    font-size: 25px;
+    border-radius: 20px;
+    margin: 50px;
+    box-shadow: 17px 20px 17.9px rgba(0, 0, 0, 0.418);
+}
+
+.not-acc {
+    background-image: linear-gradient(43deg,#000,#203c4b 50%,#313430);
+    height: 100%;
+}
+
+.not-access-p p{
+    background-color: #435bd0;
+    color: white;
+}
+
+.not-access {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10%;
+}
+
+@media (max-width: 768px) {
+    .not-access-p {
+        width: 260px;
+        padding: 27px;
+        font-size: 18px;
+    }
+    .not-access-p img{
+        width: 200px;
+    }
+}

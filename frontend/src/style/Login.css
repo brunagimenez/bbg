@@ -1,0 +1,161 @@
+.login-page {
+    background-color: #f1f1f1;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    padding: 9.8%;
+}
+
+form {
+    background-color: #fff;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    padding: 32px 24px;
+    box-shadow:
+  -0.6px -0.7px 8.4px rgba(0, 0, 0, 0.044),
+  -1px -1.1px 20.3px rgba(0, 0, 0, 0.073),
+  -0.8px -0.8px 38.2px rgba(0, 0, 0, 0.099),
+  0.7px 0.7px 68.1px rgba(0, 0, 0, 0.128),
+  6px 6.2px 127.4px rgba(0, 0, 0, 0.164),
+  44px 46px 305px rgba(0, 0, 0, 0.24)
+;
+}
+
+
+label {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    text-align: left;
+}
+
+input, select {
+    padding: 10px;
+    margin-top: 8px;
+    border-radius: .3125rem;
+    border: #dadada solid 1px;
+    letter-spacing: .03rem;
+    color: hsl(261, 25%, 18%);
+}
+
+.click-login {
+    margin-left: 15px;
+}
+
+input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.button-login:hover {
+    background-color: #007bff;
+    box-shadow: 0 0 10px 2px #007bff;
+    outline: none;
+}
+
+.toggle-password-btn {
+    position: absolute;
+    /* background-color: white; */
+    padding: 0px;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+}
+
+.password-input-container{
+    position: relative;
+}
+
+.toggle-password-input {
+    padding-right: 143px;
+}
+
+.toggle-password-icon {
+    color: blue;
+    font-size: 25px;
+    padding-top: 15px;
+}
+
+.toggle-password-btn:hover{
+    background: none;
+    box-shadow: none;
+}
+
+.left-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.click-login {
+    color: blue;
+}
+.click-login:hover {
+    color: #5959fa;
+    cursor: pointer;
+}
+
+form div {
+    display: flex;
+}
+
+
+@media (max-width: 912px) {
+    form {
+        font-size: 16px;
+    }
+    .login-page {
+        padding: 0%;
+    }
+    .toggle-password-input {
+        padding-right: 150px;
+    }
+}
+
+@media (max-width: 400px)  {
+    .toggle-password-input {
+        padding-right: 105px;
+    } 
+    .login-page {
+        padding: 0%;
+    }
+}
+
+@media (max-width: 360px)  {
+    .toggle-password-input {
+        padding-right: 85px;
+    } 
+}
+
+@media (max-width: 280px)  {
+    .login-form{
+        padding: 2px;
+    }
+    form {
+        font-size: 10px;
+    }
+    .toggle-password-input {
+        padding-right: 63px;
+    } 
+    input, select {
+        font-size: 10px;
+    }
+    button {
+        padding: 8px;
+        font-size: 14px;
+    }
+    .toggle-password-input {
+        padding-right: 53px;
+    } 
+}

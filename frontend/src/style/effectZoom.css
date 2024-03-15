@@ -1,0 +1,28 @@
+.zoom-button {
+    animation: zoomInOut 0.8s infinite alternate;
+  }
+
+@keyframes zoomInOut {
+0% {
+    transform: scale(1);
+}
+100% {
+    transform: scale(1.2);
+}
+}
+
+@media (max-width: 768px) {
+    .zoom-button {
+        animation: zoomInOut 1s infinite alternate;
+      }
+
+    @keyframes zoomInOut {
+        0% {
+            transform: scale(0.9);
+        }
+        100% {
+            transform: scale(1);
+        }
+        }
+
+}
