@@ -4,7 +4,7 @@ Bem-vindo ao repositório do site BBG Solutions Marketing & Tech! Este projeto v
 
 ## Recursos
 
-- **Gerenciamento de Banco de Dados:** O projeto utiliza um banco de dados AWS para armazenar informações do usuário e outros dados relevantes.
+- **Gerenciamento de Banco de Dados:** O projeto utiliza um banco de dados MySQL hospedado na AWS para armazenar informações do usuário e outros dados relevantes.
 - **Ambiente Dockerizado:** Tanto o backend quanto o frontend da aplicação estão containerizados usando Docker, facilitando a implantação e o gerenciamento.
 - **Tecnologia Backend:** Construído com Express.js e Node.js, garantindo uma infraestrutura robusta e escalável.
 - **Tecnologia Frontend:** Desenvolvido com React.js, fornecendo uma interface de usuário moderna e interativa.
